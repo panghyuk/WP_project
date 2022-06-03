@@ -4,6 +4,6 @@ from .models import User
 
 def mypage(request):
     user = request.user
-    posts = Post.filter(writer = user)
+    posts = Post.objects.filter(writer = user)
     return render(request,'users/mypage.html',{'posts':posts})
     
