@@ -1,0 +1,28 @@
+#detail_img{
+    border:1px solid black;
+    width: 270px;
+    height: 135px;
+    object-fit: fill;
+}
+
+.group{
+    margin-top: 5%;
+    margin-left: 10%;
+    display:flex;
+
+  }
+  
+#group_pic_detail{
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.group_pic{
+margin-right: 5%;
+border:1px solid black;
+}
+
+.group_desc{
+border:1px solid black;
+}

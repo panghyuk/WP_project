@@ -2,16 +2,50 @@
 {% load static %}
 {% block content %}
 
-<div>
-    <h1>기업명: LG 에너지솔루션</h1>
-    <h2>기업규모: 대기업</h2>
-    <h2>기업형태: 코스피</h2>
-    <h2>상세업종: 축전지 제조업</h2>
-    <a href = "#">자세히...</a>
+<div class = 'group'>
+    <div class = 'group_pic'>
+        <img id = 'group_pic_detail' class="card-img-top" src="{% static 'images/LGES.png'%}" alt="..." />
+        <!-- <img src = "{% static 'images/LG.png'%}"> -->
+    </div>
+    <div class = 'group_desc'>
+        <h1>기업명: LG 에너지솔루션</h1>
+        <h2>기업규모: 대기업</h2>
+        <h2>기업형태: 코스피</h2>
+        <h2>상세업종: 축전지 제조업</h2>
+        <a href = "#">자세히...</a>
+    </div>
 </div>
 
-<div>
+
+<div class = 'container'>
+    <br>
     <h2>최근 뉴스</h2>
+    <br>
+    <div id="board">
+        <br>
+        <table id="board_table">
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">번호</th>
+                    <th id="board_table_head_title" class="board_table_heads">제목</th>
+                    <th id="board_table_head_writer" class="board_table_heads">작성자</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">작성일자</th>
+                    <th id="board_table_head_like" class="board_table_heads">추천수</th>
+                </tr>
+            </thead>
+            <tbody id="board_table_body">
+                <tr id="board_table_body_content">
+                    <td id="board_table_body_number" class="board_table_bodies">공지</td>
+                    <td id="board_table_body_title" class="board_table_bodies"><a href="">QnA 안내</a></td>
+                    <td id="board_table_body_writer" class="board_table_bodies">관리자</td>
+                    <td id="board_table_body_pubdate" class="board_table_bodies">-</td>   
+                    <td id="board_table_body_like" class="board_table_bodies">-</td>             
+                </tr>
+            </tbody>
+        </table>
+        <br>
+      
+    </div>
     
 </div>
 

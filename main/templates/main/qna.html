@@ -1,42 +1,42 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-<div id="board">
-    <h1 id="board_title">QnA</h1>
-    <br>
-    <h4 id="board_subtitle">궁금하신 점 있으시면 글 작성해 주세요.</h4>
-    <table id="board_table">
-        <thead id="board_table_head">
-            <tr>
-                <th id="board_table_head_number" class="board_table_heads">번호</th>
-                <th id="board_table_head_title" class="board_table_heads">제목</th>
-                <th id="board_table_head_writer" class="board_table_heads">작성자</th>
-                <th id="board_table_head_pubdate" class="board_table_heads">작성일자</th>
-                <th id="board_table_head_like" class="board_table_heads">추천수</th>
-            </tr>
-        </thead>
-        <tbody id="board_table_body">
-            <tr id="board_table_body_content">
-                <td id="board_table_body_number" class="board_table_bodies">공지</td>
-                <td id="board_table_body_title" class="board_table_bodies"><a href="">QnA 안내</a></td>
-                <td id="board_table_body_writer" class="board_table_bodies">관리자</td>
-                <td id="board_table_body_pubdate" class="board_table_bodies">-</td>   
-                <td id="board_table_body_like" class="board_table_bodies">-</td>             
-            </tr>
-            <!-- {% for post in posts %}
-            <tr id="board_table_body_content">
-                <td id="board_table_body_number" class="board_table_bodies">{{forloop.revcounter}}</td>
-                <td id="board_table_body_title" class="board_table_bodies"><a href="{% url 'main:board_detail' board.id %}">{{post.title_summary}}</a></td>
-                <td id="board_table_body_writer" class="board_table_bodies">{{board.writer}}</td>
-                <td id="board_table_body_pubdate" class="board_table_bodies">{{board.created_at}}</td>
-                <td id="board_table_body_like" class="board_table_bodies">{{board.board_like_count}}</td>             
-            </tr>
-            {% endfor %} -->
-        </tbody>
-    </table>
-    <br>
-    <button id="board_create_button" onclick="location.href = '#'">글 작성하기</button>
+<div class = 'container'>
+    <div id="board">
+        <h1 id="board_title">QnA</h1>
+        <br>
+        <h4 id="board_subtitle">궁금하신 점 있으시면 글 작성해 주세요.</h4>
+        <table id="board_table">
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">번호</th>
+                    <th id="board_table_head_title" class="board_table_heads">제목</th>
+                    <th id="board_table_head_writer" class="board_table_heads">작성자</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">작성일자</th>
+                    <th id="board_table_head_like" class="board_table_heads">추천수</th>
+                </tr>
+            </thead>
+            <tbody id="board_table_body">
+                <tr id="board_table_body_content">
+                    <td id="board_table_body_number" class="board_table_bodies">공지</td>
+                    <td id="board_table_body_title" class="board_table_bodies"><a href="">QnA 안내</a></td>
+                    <td id="board_table_body_writer" class="board_table_bodies">관리자</td>
+                    <td id="board_table_body_pubdate" class="board_table_bodies">-</td>   
+                    <td id="board_table_body_like" class="board_table_bodies">-</td>             
+                </tr>
+                <!-- {% for post in posts %}
+                <tr id="board_table_body_content">
+                    <td id="board_table_body_number" class="board_table_bodies">{{forloop.revcounter}}</td>
+                    <td id="board_table_body_title" class="board_table_bodies"><a href="{% url 'main:board_detail' board.id %}">{{post.title_summary}}</a></td>
+                    <td id="board_table_body_writer" class="board_table_bodies">{{board.writer}}</td>
+                    <td id="board_table_body_pubdate" class="board_table_bodies">{{board.created_at}}</td>
+                    <td id="board_table_body_like" class="board_table_bodies">{{board.board_like_count}}</td>             
+                </tr>
+                {% endfor %} -->
+            </tbody>
+        </table>
+        <br>
+    </div>
 </div>
 
 {% endblock %}
