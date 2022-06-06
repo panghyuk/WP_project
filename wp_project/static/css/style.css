@@ -4,56 +4,70 @@
   background-color: rgba(155, 155, 155, 0.1);
   min-height: 60vh;
 }
+
 #board_title{
   font-family: 'Noto Sans KR', sans-serif;
 }
+
 #board_subtitle{
   margin-top: -20px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: lighter;
 }
+
 #board_table{
   /* margin: 0 auto; */
   width: 100%;
   border-collapse: collapse;
 }
+
 .board_table_heads{
   padding: 16px 4px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+
 #board_table_body_content{
   border-bottom: 1px solid gray;
   padding: 10px 5px;
 }
+
 .board_table_bodies{
   padding: 8px 4px;
 }
+
 #board_table_body_number{
-  /* width: 40px; */
+  width: 40px;
   text-align: center;
 }
+
 #board_table_body_title{
-  /* width: 200px; */
+  width: 200px;
 }
+
 #board_table_body_writer{
-  /* width: 80px; */
+  width: 80px;
   text-align: center;
 }
+
 #board_table_body_pubdate{
-  /* width: 200px; */
+  width: 200px;
   text-align: center;
 }
+
 #board_table_body_like{
   width: 60px;
   text-align: center;
 }
+
 #board_table_body_content:hover{
   background-color: orange;
 }
+
 #board_table_body_title a:hover{
   text-decoration: underline;
 }
+
 #board_create_button{
   padding: 4px 8px; 
   display: flex; 
@@ -61,7 +75,7 @@
 }
 
 /* 게시판 작성하기 */
-#board_new{
+/* #board_new{
   padding: 4% 11%;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -76,10 +90,10 @@
 #board_new_button_submit{
   display: flex;
   justify-content: end;
-}
+} */
 
 /* 게시판 상세 */
-#board_detail{
+/* #board_detail{
   padding: 4% 11%;
 }
 #board_detail_title{
@@ -152,4 +166,4 @@
 }
 #comment_create_input{
   width: 50%;
-}
+} */
