@@ -2,4 +2,25 @@
 {% load static %}
 {% block content %}
 
+{% if user.is_authenticated %}
+<h1>QnA 작성하기</h1>
+<br>
+<form action="{%url 'main:qna_create' %}" method="post" enctype = 'multipart/form-data'>
+    {% csrf_token %}
+    <p>제목: <input type='text' name='title'></p>
+    <p>사진: <input type="file" name="image"></p>
+    <p>내용: <textarea type='text' name='body' id='' cols='30' rows='10'></textarea></p>
+    <button type='submit'>제출</button>
+</form>
+
+<br><br><br><br><br><br><br><br>
+
+{% else %}
+<br>
+<h3>로그인 후 이용 가능</h3>
+<a href = "{% url 'account_login'%}">로그인</a>
+<a href = "{% url 'account_signup'%}">회원가입</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endif %}
+
 {% endblock %}

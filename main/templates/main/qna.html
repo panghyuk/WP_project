@@ -25,20 +25,21 @@
                     <th id="board_table_head_like" class="board_table_heads">-</th>
                 </tr>
             </thead>
-            <tbody id="board_table_body">
+            <tbody id="board_table_head">
                 <!-- {% for post in posts %}
-                <tr id="board_table_body_content">
-                    <td id="board_table_body_number" class="board_table_bodies">{{forloop.revcounter}}</td>
-                    <td id="board_table_body_title" class="board_table_bodies"><a href="{% url 'main:board_detail' board.id %}">{{post.title_summary}}</a></td>
-                    <td id="board_table_body_writer" class="board_table_bodies">{{board.writer}}</td>
-                    <td id="board_table_body_pubdate" class="board_table_bodies">{{board.created_at}}</td>
-                    <td id="board_table_body_like" class="board_table_bodies">{{board.board_like_count}}</td>             
+                <tr id="board_table_head_content">
+                    <td id="board_table_head_number" class="board_table_heads">{{forloop.revcounter}}</td>
+                    <td id="board_table_head_title" class="board_table_heads"><a href="{% url 'main:qna_detail' post.id %}">{{post.title_summary}}</a></td>
+                    <td id="board_table_head_writer" class="board_table_heads">{{board.writer}}</td>
+                    <td id="board_table_head_pubdate" class="board_table_heads">{{board.created_at}}</td>
+                    <td id="board_table_head_like" class="board_table_heads">{{board.board_like_count}}</td>             
                 </tr>
                 {% endfor %} -->
             </tbody>
         </table>
         <br>
+        <button id = 'board_create_button'><a href = "{% url 'main:qna_new'%}">QnA 작성하기</a></button>
     </div>
 </div>
-
+<br><br><br><br><br><br><br>
 {% endblock %}

@@ -2,4 +2,29 @@
 {% load static %}
 {% block content %}
 
+<h1>{{post.title}}</h1>
+{% if post.writer %}
+{% if 'user' in post.writer.username %}
+<h3>작성자 : {{post.writer.last_name}} {{post.writer.first_name}}</h3>
+{% else %}
+<h3>작성자: {{post.writer}}</h3>
+{% endif %}
+{% else %}
+<h3>작성자: 알 수 없음</h3>
+{% endif %}
+
+날짜: {{post.pub_date}}
+<hr>
+
+{% if post.image%}
+    <p><img src="{{post.image.url}}" alt='사진'></p>
+{% endif %}
+
+<p>{{post.body}}</p><br><br>
+
+<a href ="{% url 'main:home'%}">&#60;&#60;돌아가기</a>
+<a href="{% url 'main:qna_edit' post.id %}">수정하기</a>
+<a href="{% url 'main:qna_delete' post.id %}">삭제하기</a>
+<br><br><br>
+
 {% endblock %}
