@@ -61,3 +61,12 @@ def showLG(request):
 
 def showLGES(request):
     return render(request, 'main/LGES.html')
+
+def showSamsung(request):
+    return render(request,'main/samsung.html')
+
+def showSamsungElec(request):
+    return render(request,'main/samsungelec.html')
+
+def showIBK(request):
+    return render(request,'main/IBK.html')

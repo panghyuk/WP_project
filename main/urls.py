@@ -15,4 +15,7 @@ urlpatterns = [
     path('qna_delete/<str:id>', qna_delete, name="qna_delete"),
     path('LG/', showLG, name = 'showLG'),
     path('LGES/', showLGES, name = 'showLGES'),
+    path('SAMSUNG/', showSamsung, name = 'showSamsung'),
+    path('SAMSUNGELEC/', showSamsungElec, name = "showSamsungElec"),
+    path('IBK/', showIBK, name = "showIBK"),
 ]
