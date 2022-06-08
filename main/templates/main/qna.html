@@ -6,6 +6,8 @@
         <h1 id="board_title">QnA</h1>
         <br>
         <h4 id="board_subtitle">궁금하신 점 있으시면 글 작성해 주세요.</h4>
+        <button id = 'board_create_button'><a href = "{% url 'main:qna_new'%}">QnA 작성하기</a></button>
+        <br>
         <table id="board_table">
             <thead id="board_table_head">
                 <tr>
@@ -25,6 +27,52 @@
                     <th id="board_table_head_like" class="board_table_heads">-</th>
                 </tr>
             </thead>
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">1</th>
+                    <th id="board_table_head_title" class="board_table_heads"><a href = "#">LG 에너지솔루션 초봉 얼마인가요?</a></th>
+                    <th id="board_table_head_writer" class="board_table_heads">kwanghyuk</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">2022.06.09</th>
+                    <th id="board_table_head_like" class="board_table_heads">25</th>
+                </tr>
+            </thead>
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">2</th>
+                    <th id="board_table_head_title" class="board_table_heads"><a href = "#">하반기 준비 너무 막막하네요..</a></th>
+                    <th id="board_table_head_writer" class="board_table_heads">jaedragon</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">2022.06.08</th>
+                    <th id="board_table_head_like" class="board_table_heads">17</th>
+                </tr>
+            </thead>
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">3</th>
+                    <th id="board_table_head_title" class="board_table_heads"><a href = "#">삼성전자 면접 스터디 구합니다</a></th>
+                    <th id="board_table_head_writer" class="board_table_heads">pang</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">2022.06.08</th>
+                    <th id="board_table_head_like" class="board_table_heads">20</th>
+                </tr>
+            </thead>
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">4</th>
+                    <th id="board_table_head_title" class="board_table_heads"><a href = "#">데이터 분석 직무 어떤가요?</a></th>
+                    <th id="board_table_head_writer" class="board_table_heads">kwanghyuk</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">2022.06.06</th>
+                    <th id="board_table_head_like" class="board_table_heads">12</th>
+                </tr>
+            </thead>
+            <thead id="board_table_head">
+                <tr>
+                    <th id="board_table_head_number" class="board_table_heads">5</th>
+                    <th id="board_table_head_title" class="board_table_heads"><a href = "#">IBK 청년인턴 AI 역량 검사 다들 어떻게 준비하시나요?</a></th>
+                    <th id="board_table_head_writer" class="board_table_heads">Mr.Koo</th>
+                    <th id="board_table_head_pubdate" class="board_table_heads">2022.06.06</th>
+                    <th id="board_table_head_like" class="board_table_heads">8</th>
+                </tr>
+            </thead>
+
             <tbody id="board_table_head">
                 <!-- {% for post in posts %}
                 <tr id="board_table_head_content">
@@ -37,9 +85,28 @@
                 {% endfor %} -->
             </tbody>
         </table>
+
         <br>
-        <button id = 'board_create_button'><a href = "{% url 'main:qna_new'%}">QnA 작성하기</a></button>
+        <div class="container">
+            <div class="news_row">
+                <div class="col">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     </div>
 </div>
-<br><br><br><br><br><br><br>
+<br><br><br><br>
 {% endblock %}

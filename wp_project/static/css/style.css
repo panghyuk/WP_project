@@ -1,73 +1,85 @@
+.controls{
+  margin-top: 32px;
+  text-align: end;
+}
+
+.controls span{
+  background-color: #333;
+  color: white;
+  border-radius: 10%; 
+padding: 8px 16px; 
+margin: 0px 4px; 
+  font-size: 14px;
+}
+
+.controls span:hover{
+  cursor: pointer;
+}
+
+.prev:hover{
+  background-color: orange;
+}
+
+.next:hover{
+  background-color: orange;
+}
+
 /* 게시판 */
 #board{
   padding: 4% 11%;
   background-color: rgba(155, 155, 155, 0.1);
   min-height: 60vh;
 }
-
 #board_title{
   font-family: 'Noto Sans KR', sans-serif;
 }
-
 #board_subtitle{
   margin-top: -20px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: lighter;
 }
-
 #board_table{
   /* margin: 0 auto; */
   width: 100%;
   border-collapse: collapse;
 }
-
 .board_table_heads{
   padding: 16px 4px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
-
 #board_table_body_content{
   border-bottom: 1px solid gray;
   padding: 10px 5px;
 }
-
 .board_table_bodies{
   padding: 8px 4px;
 }
-
 #board_table_body_number{
-  width: 40px;
+  /* width: 40px; */
   text-align: center;
 }
-
 #board_table_body_title{
-  width: 200px;
+  /* width: 200px; */
 }
-
 #board_table_body_writer{
-  width: 80px;
+  /* width: 80px; */
   text-align: center;
 }
-
 #board_table_body_pubdate{
-  width: 200px;
+  /* width: 200px; */
   text-align: center;
 }
-
 #board_table_body_like{
   width: 60px;
   text-align: center;
 }
-
 #board_table_body_content:hover{
   background-color: orange;
 }
-
 #board_table_body_title a:hover{
   text-decoration: underline;
 }
-
 #board_create_button{
   padding: 4px 8px; 
   display: flex; 
@@ -75,7 +87,7 @@
 }
 
 /* 게시판 작성하기 */
-/* #board_new{
+#board_new{
   padding: 4% 11%;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -90,10 +102,10 @@
 #board_new_button_submit{
   display: flex;
   justify-content: end;
-} */
+}
 
 /* 게시판 상세 */
-/* #board_detail{
+#board_detail{
   padding: 4% 11%;
 }
 #board_detail_title{
@@ -166,263 +178,4 @@
 }
 #comment_create_input{
   width: 50%;
-} */
-
-.content_issue{
-  padding: 0% 11%; 
-  background-color: rgba(155, 155, 155, 0.1);
-}
-#content_issue_second, #content_issue_third, #content_issue_tablet_second, #content_issue_tablet_third,#content_issue_tablet_fourth, #content_issue_tablet_fifth, #content_issue_mobile_second, #content_issue_mobile_third, #content_issue_mobile_fourth,#content_issue_mobile_fifth, #content_issue_mobile_sixth, #content_issue_mobile_seventh, #content_issue_mobile_eighth, #content_issue_mobile_ninth{
-  display: none;
-  justify-content: center;
-} 
-#content_issue_first_title{
-  font-size: 30px; 
-  margin-bottom: 20px; 
-  padding-top: 60px;
-  font-weight: bold;
-}
-#content_issue_first_subtitle{
-  font-size: 18px; 
-  margin: 20px 0px 20px 28px; 
-}
-#content_issue_first{
-  display: flex;
-  justify-content: center;
-}
-#content_issue_video{
-  border: 1px solid black;
-  margin: 0px 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-#content_issue_video_iframe{
-  width: 24vw; 
-  height: 16vw; 
-}
-#content_issue_video_title{
-  font-size: 18px; 
-  font-weight: 700;
-  text-align: center;
-}
-#content_issue_video_subtitle{
-  font-size: 14px; 
-  font-weight: 500;
-  text-align: center;
-}
-.controls{
-  margin-top: 32px;
-  text-align: end;
-}
-.controls span{
-  background-color: #333;
-  color: white;
-  border-radius: 10%; 
-padding: 8px 16px; 
-margin: 0px 4px; 
-  font-size: 14px;
-}
-.controls span:hover{
-  cursor: pointer;
-}
-.prev:hover{
-  background-color: orange;
-}
-.next:hover{
-  background-color: orange;
-}
-.content_issue_tablet{
-  display: none;
-}
-.content_issue_mobile{
-  display: none;
-}
-.content_issue_second_title{
-  margin: 60px 0px 20px 0px; 
-  font-size: 30px; 
-  font-weight: bold;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.content_issue_second_category{
-  display: flex;
-  margin-top: 20px;
-}
-.content_issue_second_category_list{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-.content_issue_second_category_list h3{
-  margin: 0px 20px;
-  padding: 2px;
-  font-weight: 400;
-  font-size: 22px;
-}
-.content_issue_second_category_list h3:hover{
-  color: orange;
-  font-weight: 700;
-  cursor: pointer;
-  border-bottom: 2px solid black;
-}
-.content_issue_second_category_list:focus{
-  border: 1px solid black;
-}
-.content_issue_second_list{
-  padding-bottom: 50px;
-}
-.list_content{
-  margin-top: 9px;
-  padding: 0px 10px;
-}
-.list_content_border{
-  border-top: 1px solid rgb(146, 140, 140);
-}
-.list_content_link h2{
-  font-size: 18px;
-}
-.list_content_link:hover{
-  color: orange;
-}
-#list_content_link_tag{
-  border: 1px solid black;
-  font-size: 10px;
-  padding: 0px 4px;
-  border-radius: 10px;
-  font-weight: 400;
-  background-color: white;
-}
-#list_content_link_exp{
-  opacity: 0.7;
-  margin: -10px 0px 0px 10px;
-}
-
-/* 자소서 / 면접 */
-.content_ready{
-  padding: 0% 11%;
-  padding-top: 30px; 
-  background-color: rgba(130, 168, 212, 0.1);
-}
-.content_ready_title{
-  padding-top: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.content_ready_subtitle{
-  font-size: 8px;
-  margin-top: -16px;
-  margin-bottom: 4px;
-}
-.content_ready_content{
-  display:flex;
-  justify-content: center;
-}
-.content_ready_content_contents{
-  border: 1px solid black;
-  margin: 10px;
-  width: 24vw;
-  text-align: center;
-  position: relative;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
-.content_ready_content_contents:hover{
-  border: 1px solid orange;
-}
-.content_ready_content_contents img{
-  width: 80%;
-  height: 40%;
-  padding: 20px 0px 0px 0px;
-}
-#content_ready_content_contents_title{
-  font-size: 18px;
-  font-weight: 700;
-}
-#content_ready_content_contents_name{
-  font-size: 14px;
-  font-weight: 500;
-}
-#content_ready_content_contents_exp{
-  visibility: hidden;
-  top: 75%;
-  position: absolute;
-  font-size: 12px;
-  font-weight: 500;
-  width: 100%;
-}
-.content_ready_content_contents:hover #content_ready_content_contents_exp{
-  visibility: visible;
-}
-.content_ready_content_contents:hover #content_ready_content_contents_title{
-  visibility: hidden;
-}
-.content_ready_content_contents:hover #content_ready_content_contents_name{
-  visibility: hidden;
-}
-
-.content_interview{
-  padding: 0% 11%;
-  padding-top: 20px; 
-  padding-bottom: 30px;
-  background-color: rgba(130, 168, 212, 0.1);
-}
-.content_interview_title{
-  padding-top: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.content_interview_subtitle{
-  font-size: 8px;
-  margin-top: -16px;
-  margin-bottom: 4px;
-}
-.content_interview_content{
-  display:flex;
-  justify-content: center;
-}
-.content_interview_content_contents{
-  border: 1px solid black;
-  margin: 10px;
-  width: 24vw;
-  text-align: center;
-  position: relative;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
-.content_interview_content_contents:hover{
-  border: 1px solid orange;
-}
-.content_interview_content_contents img{
-  width: 80%;
-  height: 40%;
-  padding: 20px 0px 0px 0px;
-}
-.content_interview_content_contents iframe{
-  width: 100%;
-  height: 48%;
-}
-#content_interview_content_contents_title{
-  font-size: 18px;
-  font-weight: 700;
-}
-#content_interview_content_contents_name{
-  font-size: 14px;
-  font-weight: 500;
-}
-#content_interview_content_contents_exp{
-  visibility: hidden;
-  top: 75%;
-  position: absolute;
-  font-size: 12px;
-  font-weight: 500;
-  width: 100%;
-}
-.content_interview_content_contents:hover #content_interview_content_contents_exp{
-  visibility: visible;
-}
-.content_interview_content_contents:hover #content_interview_content_contents_title{
-  visibility: hidden;
-}
-.content_interview_content_contents:hover #content_interview_content_contents_name{
-  visibility: hidden;
 }
