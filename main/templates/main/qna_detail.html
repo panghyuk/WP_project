@@ -2,29 +2,28 @@
 {% load static %}
 {% block content %}
 
-<h1>{{post.title}}</h1>
-{% if post.writer %}
-{% if 'user' in post.writer.username %}
-<h3>작성자 : {{post.writer.last_name}} {{post.writer.first_name}}</h3>
-{% else %}
-<h3>작성자: {{post.writer}}</h3>
-{% endif %}
-{% else %}
-<h3>작성자: 알 수 없음</h3>
-{% endif %}
+<br>
+<div class = 'container'>
+    <div class = 'qna_title'>
+        <h1>LG 에너지 솔루션 초봉은 얼마인가요?</h1>
+        <h3>작성자 : kwanghyuk</h3>
+        날짜: 2022.06.09
+        추천수: 25
+    </div>
+    <div>
 
-날짜: {{post.pub_date}}
-<hr>
+    <button><i class="far fa-thumbs-up"></i></i>추천</button>
+        <button><i class="far fa-thumbs-down"></i>비추천</button>
+    </div>
 
-{% if post.image%}
-    <p><img src="{{post.image.url}}" alt='사진'></p>
-{% endif %}
+    <hr>
+    <p><img src="{% static 'images/성과급.jpg' %}" alt='사진' width = "300" height = "400"></p>
 
-<p>{{post.body}}</p><br><br>
+    <p>LG 에너지솔루션 제조지능화(빅데이터 분석) 직무 준비 중인데 혹시 신입 초봉은 얼마인가요?</p>
+    <br><br>
 
-<a href ="{% url 'main:home'%}">&#60;&#60;돌아가기</a>
-<a href="{% url 'main:qna_edit' post.id %}">수정하기</a>
-<a href="{% url 'main:qna_delete' post.id %}">삭제하기</a>
-<br><br><br>
-
+    <a href ="{% url 'main:qna' %}">&#60;&#60;돌아가기</a>
+    <a href="{% url 'main:qna_delete' %}">삭제하기</a>
+    <br><br><br>
+</div>
 {% endblock %}

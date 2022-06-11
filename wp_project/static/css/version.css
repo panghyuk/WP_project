@@ -46,3 +46,8 @@ border:1px solid black;
 .holy{
     margin: 3% 0% 2% 15%;
 }
+
+.user_info{
+    text-align:right;
+    margin-right: 12%;
+}
