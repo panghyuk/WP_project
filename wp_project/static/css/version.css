@@ -32,9 +32,17 @@ border:1px solid black;
 }
 
 .group_row {
-    margin-left: 45%;
+    margin-left: 40%;
 }
 
 .myfavorite a{
     text-decoration: none;
+}
+
+.qna_new {
+    margin: 3% 0% 2% 15%; /* top right bottom left */
+}
+
+.holy{
+    margin: 3% 0% 2% 15%;
 }

@@ -17,10 +17,12 @@
 
 {% else %}
 <br>
+<div class = 'qna_new'>
 <h3>로그인 후 이용 가능</h3>
 <a href = "{% url 'account_login'%}">로그인</a>
 <a href = "{% url 'account_signup'%}">회원가입</a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 {% endif %}
 
 {% endblock %}
